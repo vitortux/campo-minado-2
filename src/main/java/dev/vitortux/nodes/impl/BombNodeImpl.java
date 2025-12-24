@@ -12,6 +12,7 @@ public class BombNodeImpl implements Node {
 
     private final List<NodeObserver> observers = new ArrayList<>();
 
+    // * O reveal deve sempre apenas notificar o observer para bombas
     @Override
     public void reveal() {
         if (revealed)
